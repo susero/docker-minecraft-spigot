@@ -17,7 +17,7 @@ docker build -t susero/minecraft-server-spigot .
 # dockerコンテナの起動
 
 ```sh
-docker run --rm -e "AGREE_TO_EULA=true" -v $(pwd)/data:/home/spigot-user/data -p 25565:25565 susero/minecraft-server-spigot
+docker run --rm -e "AGREE_TO_EULA=true" -v $(pwd)/data:/home/spigot/data -p 25565:25565 susero/minecraft-server-spigot
 ```
 
 初めて起動した時は、Spigotのインストーラーが自動的にダウンロードされ、Spigotのビルド(コンパイル）が行われます。
